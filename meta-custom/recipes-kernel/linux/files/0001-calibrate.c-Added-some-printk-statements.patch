@@ -1,0 +1,30 @@
+From e29cf3bb19e705f3bdb5a7027649611d9ebd678e Mon Sep 17 00:00:00 2001
+From: GomaaMohamed <gomaaeldebaby2211@gmail.com>
+Date: Sat, 16 Mar 2024 12:06:14 +0200
+Subject: [PATCH] calibrate.c - Added some printk statements
+
+---
+ init/calibrate.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/init/calibrate.c b/init/calibrate.c
+index ce635dccf3d9..12b2f25efe06 100644
+--- a/init/calibrate.c
++++ b/init/calibrate.c
+@@ -276,6 +276,13 @@ void calibrate_delay(void)
+ 	unsigned long lpj;
+ 	static bool printed;
+ 	int this_cpu = smp_processor_id();
++	
++	printk("*************************************\n");
++    	printk("*                                   *\n");
++    	printk("*        Hello Yocto Kernel         *\n");
++    	printk("*        Maintainer: Gomaa          *\n");
++    	printk("*                                   *\n");
++    	printk("*************************************\n");
+ 
+ 	if (per_cpu(cpu_loops_per_jiffy, this_cpu)) {
+ 		lpj = per_cpu(cpu_loops_per_jiffy, this_cpu);
+-- 
+2.34.1
+

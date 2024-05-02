@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>agl_title_793x211.png</file>
+        <file>Utility_Logo_Grey-01.svg</file>
+        <file>fuel-icon.png</file>
+        <file>temperature-icon.png</file>
+        <file>ABS.svg</file>
+        <file>ABS_red.svg</file>
+        <file>ABS_yellow.svg</file>
+        <file>Battery.svg</file>
+        <file>Battery_red.svg</file>
+        <file>Battery_yellow.svg</file>
+        <file>CruiseControl.svg</file>
+        <file>CruiseControl_green.svg</file>
+        <file>CruiseControl_white.svg</file>
+        <file>CruiseControl_yellow.svg</file>
+        <file>Engine.svg</file>
+        <file>Engine_red.svg</file>
+        <file>Engine_yellow.svg</file>
+        <file>LaneDeparture.svg</file>
+        <file>LaneDeparture_green.svg</file>
+        <file>LaneDeparture_yellow.svg</file>
+        <file>LaneDeparture_white.svg</file>
+        <file>Lights.svg</file>
+        <file>Lights_red.svg</file>
+        <file>Lights_yellow.svg</file>
+        <file>Oil.svg</file>
+        <file>Oil_red.svg</file>
+        <file>Oil_yellow.svg</file>
+        <file>OpenDoor.svg</file>
+        <file>OpenDoor_red.svg</file>
+        <file>OpenDoor_yellow.svg</file>
+        <file>ParkingBrake.svg</file>
+        <file>ParkingBrake_red.svg</file>
+        <file>ParkingBrake_yellow.svg</file>
+        <file>Seatbelt.svg</file>
+        <file>Seatbelt_red.svg</file>
+        <file>Seatbelt_yellow.svg</file>
+    </qresource>
+</RCC>

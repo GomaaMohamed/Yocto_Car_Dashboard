@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Define the directory path
+directory="/home/gomaa/embedded/19-Qt/helloa/DashboardClient/Icons"
+
+# Navigate to the directory
+cd "$directory" || exit
+
+# Loop through all files in the directory
+for file in AGL_Icons_*; do
+    # Check if the file exists and its name starts with "AGL_Icons_"
+    if [ -f "$file" ]; then
+        # Remove "AGL_Icons_" from the beginning of the file name
+        new_name="${file#AGL_Icons_}"
+        # Rename the file
+        mv "$file" "$new_name"
+        echo "Renamed $file to $new_name"
+    fi
+done
+

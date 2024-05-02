@@ -1,0 +1,22 @@
+[Unit]
+Description=Dashboard Client Application
+After=weston.target
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+Environment="DISPLAY=:0"
+Environment="XDG_RUNTIME_DIR=/run/user/%U"
+Environment="QT_QPA_PLATFORM=wayland"
+Environment="WAYLAND_DISPLAY=/run/wayland-0"
+Environment="VSOMEIP_CONFIGURATION=/usr/etc/vsomeip/Configurations/dashboardclient.json"
+Environment="VSOMEIP_APPLICATION_NAME=dashboard"
+WorkingDirectory=/usr/bin
+ExecStart=/usr/bin/dashboard_app
+Restart=always
+IgnoreSIGPIPE=no
+
+[Install]
+WantedBy=graphical.target multi-user.target
+

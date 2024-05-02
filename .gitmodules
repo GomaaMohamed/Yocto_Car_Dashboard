@@ -1,0 +1,9 @@
+[submodule "poky"]
+	path = poky
+	url = https://github.com/yoctoproject/poky.git
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = https://github.com/openembedded/meta-openembedded.git
+[submodule "yocto/meta-qt5"]
+	path = meta-qt5
+	url = https://github.com/meta-qt5/meta-qt5
